@@ -3,6 +3,7 @@ import { APP_NAME } from "@/lib/contants";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import CredentialsSignInForm from "./CredentialsSignInForm";
 
 export const metadata: Metadata = {
   title: "Sign In",
@@ -26,7 +27,7 @@ export default function SignInPage() {
           <CardDescription className="text-center">Sign In to your account</CardDescription>
         </CardHeader>
         <CardContent className="space-y-4">
-            {/* From here */}
+            <CredentialsSignInForm />
         </CardContent>
       </Card>
     </div>
