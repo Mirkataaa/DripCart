@@ -22,7 +22,6 @@ export const config = {
         },
         async authorize(credentials) {
             // Data coming from a form
-
             if(credentials == null) return null;
 
             // Find user in database 
@@ -53,7 +52,6 @@ export const config = {
     callbacks: {
         async session ({session , user , trigger , token} : any) {
             // Set the user Id from the token
-
             session.user.id = token.sub;
 
             // If there is an update , set the user name

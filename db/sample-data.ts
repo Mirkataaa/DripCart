@@ -5,13 +5,13 @@ const sampleData = {
     {
       name: 'John',
       email: 'admin@example.com',
-      password: hashSync('12345' , 10),
+      password: hashSync('123456' , 10),
       role: 'admin'
     },
     {
       name: 'Jane',
       email: 'user@example.com',
-      password: hashSync('12345' , 10),
+      password: hashSync('123456' , 10),
       role: 'user'
     }
   ],
