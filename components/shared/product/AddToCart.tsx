@@ -25,12 +25,13 @@ export default function AddToCart({ item }: { item: CartItem }) {
           t.visible ? "animate-enter" : "animate-leave"
         } max-w-md w-full bg-white shadow-lg rounded-lg pointer-events-auto flex ring-1 ring-black ring-opacity-5`}
       >
-        <button
+        <Button
+          variant="ghost"
           onClick={() => router.push("/cart")}
-          className="w-full border border-transparent rounded-none rounded-r-lg p-4 flex items-center justify-center text-sm font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          className="w-full"
         >
           {item.name} added to cart/ Go to Cart
-        </button>
+        </Button>
       </div>
     ));
   };
