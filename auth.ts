@@ -106,7 +106,7 @@ export const config = {
         });
 
         // Set newly generated sessonCardId in the reponse cookies
-        response.cookies.set('sessionCardId' , sessionCartId);
+        response.cookies.set('sessionCartId' , sessionCartId);
 
         return response;
       } else {
