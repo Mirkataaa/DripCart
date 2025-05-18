@@ -13,7 +13,7 @@ export default function AddToCart({ item }: { item: CartItem }) {
     const res = await addItemToCart(item);
 
     if (!res.success) {
-      toast.error(res.message);
+      toast.error(res.message as string);
       return;
     }
 
@@ -30,7 +30,7 @@ export default function AddToCart({ item }: { item: CartItem }) {
           onClick={() => router.push("/cart")}
           className="w-full"
         >
-          {item.name} added to cart/ Go to Cart
+          {res.message}
         </Button>
       </div>
     ));
