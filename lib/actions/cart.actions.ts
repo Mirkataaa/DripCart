@@ -118,7 +118,7 @@ export async function addItemToCart(data: CartItem) {
   } catch (error) {
     return {
       success: false,
-      message: formatError(error),
+      message: await formatError(error),
     };
   }
 }
@@ -206,7 +206,7 @@ export async function removeItemFromCart(productId: string) {
   } catch (error) {
     return {
       success: false,
-      message: formatError(error),
+      message: await formatError(error),
     };
   }
 }
