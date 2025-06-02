@@ -23,6 +23,8 @@ export default async function SignInPage(props :{
   }>
 }) {
 
+  console.log(props);
+  
   // const {callbackUrl} = await props.searchParams
 
   // Get session (server comp way)
