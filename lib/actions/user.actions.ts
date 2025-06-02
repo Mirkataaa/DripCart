@@ -32,7 +32,12 @@ export async function signInWithCredentials(
 
 // Sign user out
 export async function signOutUser() {
-  await signOut();
+  try {
+    await signOut();
+  } catch (err) {
+    console.error('Sign out failed' , err);
+    throw err;
+  }
 }
 
 // Sign up user
