@@ -14,13 +14,6 @@ import { UserIcon } from "lucide-react";
 export default async function UserButton() {
   const session = await auth();
 
-  console.log(session);
-
-  if(session) {
-    await signOutUser();
-  }
-  
-
   if (!session) {
     return (
       <Button asChild>
