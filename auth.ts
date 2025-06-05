@@ -6,6 +6,7 @@ import { compareSync } from "bcrypt-ts-edge";
 import type { NextAuthConfig } from "next-auth";
 import { cookies } from "next/headers";
 import { NextResponse } from "next/server";
+import { NEXTAUTH_SECRET } from "./lib/contants";
 
 export const config = {
     trustHost: true,
@@ -70,6 +71,7 @@ export const config = {
       },
     }),
   ],
+  secret: NEXTAUTH_SECRET,
   callbacks: {
     async session({ session, user, trigger, token }: any) {
       // Set the user Id from the token
