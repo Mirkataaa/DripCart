@@ -28,9 +28,9 @@ export default async function SignInPage(props :{
   // Get session (server comp way)
   const session = await auth();
 
-  if (session) {
-    return redirect(callbackUrl || "/");
-  }
+  // if (session) {
+  //   return redirect(callbackUrl || "/");
+  // }
 
   return (
     <div className="w-full max-w-md mx-auto">
