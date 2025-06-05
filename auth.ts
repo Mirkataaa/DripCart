@@ -8,6 +8,20 @@ import { cookies } from "next/headers";
 import { NextResponse } from "next/server";
 
 export const config = {
+    trustHost: true,
+
+  cookies: {
+    sessionToken: {
+      name: `__Secure-next-auth.session-token`,
+      options: {
+        httpOnly: true,
+        sameSite: "none",
+        path: "/",
+        secure: true,
+      },
+    },
+  },
+
   pages: {
     signIn: "/sign-in",
     error: "/sign-in",
