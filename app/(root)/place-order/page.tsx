@@ -110,6 +110,7 @@ export default async function PlaceOrderPage() {
             </CardContent>
           </Card>
         </div>
+        <div>
         <Card>
           <CardContent className="p-4 gap-4 space-y-5">
             <div className="flex justify-between">
@@ -131,6 +132,7 @@ export default async function PlaceOrderPage() {
             <PlaceOrderForm></PlaceOrderForm>
           </CardContent>
         </Card>
+        </div>
       </div>
     </>
   );
