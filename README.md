@@ -1,36 +1,22 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# <p align="center">DripCart - E-commerce web application (...in progress) </p>
+Live Demo - https://drip-cart.vercel.app/ (problem with login , currently on pause )
+#
 
-## Getting Started
+DripCart is an e-commerce project for clothing and footwear, built as a way to explore how a real online store could be structured and implemented.
+The project focuses on core e-commerce functionality such as product listings, authentication, and user interaction, while experimenting with modern tools and patterns used in production-grade applications.
+Development is currently paused, but the project has a clear roadmap and is planned to be completed and refined over time as part of ongoing learning and portfolio work.
 
-First, run the development server:
+## Tech Stack
+- Next.js 15
+- React 19
+- TypeScript
+- Tailwind CSS
+- NextAuth (Auth.js) with Prisma adapter
+- bcrypt (edge-compatible) for password hashing
+- React Hook Form
+- Zod for schema-based validation
+- Radix UI primitives
+- next-themes for theme handling
+- Prisma
+- Neon (PostgreSQL, serverless)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
